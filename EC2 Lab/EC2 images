@@ -1,0 +1,59 @@
+# Lab 11 – Amazon EBS Volumes and Snapshots
+
+## 🧠 Overview
+
+In this lab, I learned how to work with Amazon Elastic Block Store (EBS) volumes, which provide durable, high-performance storage for EC2 instances. I practiced creating, attaching, mounting, and backing up EBS volumes using snapshots.
+
+---
+
+## 🎯 Objectives
+
+By the end of this lab, I was able to:
+
+- Create a new EBS volume
+- Attach the volume to an existing EC2 instance
+- Mount the EBS volume to make it usable by the instance
+- Create a snapshot (backup) of the EBS volume
+- Launch a new volume from the snapshot
+
+---
+
+## 🔧 What I Did (Steps Overview)
+
+1. Created a new EBS volume in the same Availability Zone as the EC2 instance
+2. Attached the volume to the EC2 instance using the AWS Console
+3. Connected to the EC2 instance using SSH and mounted the EBS volume
+4. Verified the volume was available using Linux commands (e.g., `lsblk`, `df -h`)
+5. Created a snapshot of the volume as a backup
+6. Used the snapshot to create a new volume
+7. Verified that the new volume contained the same data as the original
+
+---
+
+## 📸 Screenshots
+
+- Step 1: EBS Volume Created  
+  ![Step 1](./step1.png)
+
+- Step 2: Volume Attached to EC2  
+  ![Step 2](./step2.png)
+
+- Step 3: Volume Mounted on EC2 Instance  
+  ![Step 3](./step3.png)
+
+- Step 4: Snapshot Created  
+  ![Step 4](./step4.png)
+
+- Step 5: New Volume from Snapshot  
+  ![Step 5](./step5.png)
+
+---
+
+✅ **Lab Completion:**
+
+This lab was successfully completed when I:
+- Attached and mounted a working EBS volume to an EC2 instance
+- Created a snapshot as a backup
+- Recovered the data using a new volume made from the snapshot
+
+Now I understand how EBS volumes work with EC2 and how snapshots can be used for backup and recovery.
